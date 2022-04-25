@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet_Final
 {
-
+    [Serializable]
     public class Note
     {
         //Variables membres
