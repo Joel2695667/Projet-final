@@ -111,11 +111,9 @@ namespace Projet_Final
             string ch = this.TB_Note_NumeroEtudiant.Text;            
             foreach (Etudiant x in listTempEtuidiant)
             {
-                if ((x.NumeroEtudiant).Contains(ch))
-                {
-                    p++;                   
-                    if(p == 1)
-                    {
+                if ((x.NumeroEtudiant).Equals(ch, StringComparison.OrdinalIgnoreCase))
+                {                                                  
+                                      
                         Note note = new Note
                             (
 
@@ -129,9 +127,8 @@ namespace Projet_Final
                                     this.TB_Note_NumeroEtudiant.Text = "";
                                     this.TB_Note_NumeroCours.Text = "";
                                     this.TB_Note.Text = "";
-                    }
-                }
-                else
+                    
+                }else
                 {
                     MessageBox.Show("Aucune correspondance avec un numero etudiant ou un numero de cours existant dans les listes!");
                 }
