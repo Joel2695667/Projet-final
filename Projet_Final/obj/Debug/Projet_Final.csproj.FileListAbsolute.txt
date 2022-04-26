@@ -9,3 +9,14 @@ C:\Users\USER\Downloads\ExerciceCsharp\Projet_Final\obj\Debug\Projet_Final.cspro
 C:\Users\USER\Downloads\ExerciceCsharp\Projet_Final\obj\Debug\Projet_Final.csproj.CoreCompileInputs.cache
 C:\Users\USER\Downloads\ExerciceCsharp\Projet_Final\obj\Debug\Projet_Final.exe
 C:\Users\USER\Downloads\ExerciceCsharp\Projet_Final\obj\Debug\Projet_Final.pdb
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\bin\Debug\Projet_Final.exe.config
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\bin\Debug\Projet_Final.exe
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\bin\Debug\Projet_Final.pdb
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.MainWindow.resources
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.Properties.Resources.resources
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.csproj.GenerateResource.cache
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.exe
+C:\Users\USER\Downloads\Projet_Assurance_qualite\Projet-final\Projet_Final\obj\Debug\Projet_Final.pdb

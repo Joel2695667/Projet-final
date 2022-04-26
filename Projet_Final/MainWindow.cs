@@ -106,19 +106,40 @@ namespace Projet_Final
         private void button1_Click(object sender, EventArgs e)
         {
            
-            Note note = new Note
-                (
+            List<Etudiant> listTempEtuidiant = EtudiantSerialisation.Open();
+            int p= 0, k = 0;
+            string ch = this.TB_Note_NumeroEtudiant.Text;
+            string ch_2 = this.TB_Note_NumeroCours.Text;
+            foreach (Etudiant x in listTempEtuidiant)
+            {
+                if ((x.NumeroEtudiant).Equals(ch))
+                {
+                    p++;
+                    k++;
+                    if(p==k && (p != 0 && k != 0))
+                    {
+                        Note note = new Note
+                            (
 
-                    this.TB_Note_NumeroEtudiant.Text,
-                    this.TB_Note_NumeroCours.Text,
-                    this.TB_Note.Text
-                );
+                                this.TB_Note_NumeroEtudiant.Text,
+                                this.TB_Note_NumeroCours.Text,
+                                this.TB_Note.Text
+                            );
 
-            listNote.Add(note);
-            NoteSerialisation.Save_2(listNote);
-            this.TB_Note_NumeroEtudiant.Text = "";
-            this.TB_Note_NumeroCours.Text = "";
-            this.TB_Note.Text = "";
+                                    listNote.Add(note);
+                                    NoteSerialisation.Save_2(listNote);
+                                    this.TB_Note_NumeroEtudiant.Text = "";
+                                    this.TB_Note_NumeroCours.Text = "";
+                                    this.TB_Note.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Aucune correspondance avec un numero etudiant ou un numero de cours existant dans les listes!");
+                }
+
+            }            
+            
         }
 
         //Affiche la liste de note
