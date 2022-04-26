@@ -107,16 +107,14 @@ namespace Projet_Final
         {
            
             List<Etudiant> listTempEtuidiant = EtudiantSerialisation.Open();
-            int p= 0, k = 0;
-            string ch = this.TB_Note_NumeroEtudiant.Text;
-            string ch_2 = this.TB_Note_NumeroCours.Text;
+            int p = 0;
+            string ch = this.TB_Note_NumeroEtudiant.Text;            
             foreach (Etudiant x in listTempEtuidiant)
             {
-                if ((x.NumeroEtudiant).Equals(ch))
+                if ((x.NumeroEtudiant).Contains(ch))
                 {
-                    p++;
-                    k++;
-                    if(p==k && (p != 0 && k != 0))
+                    p++;                   
+                    if(p == 1)
                     {
                         Note note = new Note
                             (
