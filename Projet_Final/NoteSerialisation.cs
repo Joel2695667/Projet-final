@@ -73,7 +73,7 @@ namespace Projet_Final
             if (File.Exists(filePath))
             {
                 lisTemp = Open();
-                foreach (Note item in notes) lisTemp.Add(item);
+                lisTemp.Add(notes[notes.Count - 1]);
                 Save(lisTemp);
             }
             else

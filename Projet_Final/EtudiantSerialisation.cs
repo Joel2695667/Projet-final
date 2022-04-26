@@ -77,7 +77,7 @@ namespace Projet_Final
             if (File.Exists(filePath))
             {
                 lisTemp = Open();
-                foreach (Etudiant item in etudiant) lisTemp.Add(item);
+                lisTemp.Add(etudiant[etudiant.Count - 1]);
                 Save(lisTemp);
             }
             else
