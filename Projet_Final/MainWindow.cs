@@ -24,7 +24,7 @@ namespace Projet_Final
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace Projet_Final
         {
             Cours cours = new Cours
                 (
-
+                    
                     this.TB_NumeroCours.Text,
                     this.TB_CodeCours.Text,
                     this.TB_TitreCours.Text
@@ -81,7 +81,8 @@ namespace Projet_Final
                 ch += x.ToString();
             }
 
-            this.TB_Information.Text = ch;
+            this.TB_Information.Text = "Liste des étudiants";
+            this.LB_affiche.Text = ch;
         }
 
         //Affiche la liste des cours
@@ -97,13 +98,14 @@ namespace Projet_Final
                 ch += x.ToString();
             }
 
-            this.TB_Information.Text = ch;
+            this.TB_Information.Text = "Liste des cours";
+            this.LB_affiche.Text = ch;
         }
 
         //Ajoute une note
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
             Note note = new Note
                 (
 
@@ -132,16 +134,13 @@ namespace Projet_Final
                 ch += x.ToString();
             }
 
-            this.TB_Information.Text = ch;
-        }
-
-        private void MainWindow_Load_1(object sender, EventArgs e)
-        {
-
+            this.TB_Information.Text = "Liste des notes";
+            this.LB_affiche.Text = ch;
         }
 
         private void BT_Supprime_Click(object sender, EventArgs e)
         {
+           
             EtudiantSerialisation.Save(etudiants);
             CoursSerialisation.Save(listCrs);
             NoteSerialisation.Save(listNote);

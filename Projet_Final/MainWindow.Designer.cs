@@ -58,6 +58,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.BT_AfficheNote = new System.Windows.Forms.Button();
             this.BT_Supprime = new System.Windows.Forms.Button();
+            this.LB_affiche = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -285,11 +286,14 @@
             // 
             // TB_Information
             // 
+            this.TB_Information.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Information.ForeColor = System.Drawing.Color.Red;
             this.TB_Information.Location = new System.Drawing.Point(620, 285);
             this.TB_Information.Multiline = true;
             this.TB_Information.Name = "TB_Information";
-            this.TB_Information.Size = new System.Drawing.Size(437, 318);
+            this.TB_Information.Size = new System.Drawing.Size(437, 30);
             this.TB_Information.TabIndex = 24;
+            this.TB_Information.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TB_AfficheEtudiant
             // 
@@ -332,7 +336,7 @@
             this.BT_AfficheNote.BackColor = System.Drawing.Color.Cyan;
             this.BT_AfficheNote.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_AfficheNote.ForeColor = System.Drawing.Color.Black;
-            this.BT_AfficheNote.Location = new System.Drawing.Point(427, 425);
+            this.BT_AfficheNote.Location = new System.Drawing.Point(427, 424);
             this.BT_AfficheNote.Name = "BT_AfficheNote";
             this.BT_AfficheNote.Size = new System.Drawing.Size(187, 49);
             this.BT_AfficheNote.TabIndex = 28;
@@ -345,17 +349,27 @@
             this.BT_Supprime.BackColor = System.Drawing.Color.Crimson;
             this.BT_Supprime.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Supprime.ForeColor = System.Drawing.Color.Black;
-            this.BT_Supprime.Location = new System.Drawing.Point(104, 550);
+            this.BT_Supprime.Location = new System.Drawing.Point(138, 551);
             this.BT_Supprime.Name = "BT_Supprime";
             this.BT_Supprime.Size = new System.Drawing.Size(371, 43);
-            this.BT_Supprime.TabIndex = 30;
+            this.BT_Supprime.TabIndex = 29;
             this.BT_Supprime.Text = "Supprimer tous les fichiers";
             this.BT_Supprime.UseVisualStyleBackColor = false;
             this.BT_Supprime.Click += new System.EventHandler(this.BT_Supprime_Click);
             // 
+            // LB_affiche
+            // 
+            this.LB_affiche.AutoSize = true;
+            this.LB_affiche.Location = new System.Drawing.Point(626, 327);
+            this.LB_affiche.Name = "LB_affiche";
+            this.LB_affiche.Size = new System.Drawing.Size(40, 13);
+            this.LB_affiche.TabIndex = 30;
+            this.LB_affiche.Text = "Affiche";
+            // 
             // MainWindow
             // 
             this.ClientSize = new System.Drawing.Size(1069, 615);
+            this.Controls.Add(this.LB_affiche);
             this.Controls.Add(this.BT_Supprime);
             this.Controls.Add(this.BT_AfficheNote);
             this.Controls.Add(this.label13);
@@ -387,7 +401,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Name = "MainWindow";
-            this.Load += new System.EventHandler(this.MainWindow_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,6 +437,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BT_AfficheNote;
         private System.Windows.Forms.Button BT_Supprime;
+        private System.Windows.Forms.Label LB_affiche;
     }
 }
 
