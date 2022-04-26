@@ -24,7 +24,7 @@ namespace Projet_Final
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace Projet_Final
                 );
 
             etudiants.Add(etudiant);
-            EtudiantSerialisation.Save(etudiants);
+            EtudiantSerialisation.Save_2(etudiants);
 
             this.TB_NomEtudiant.Text = "";
             this.TB_PrenomEtudiant.Text = "";
@@ -55,14 +55,14 @@ namespace Projet_Final
         {
             Cours cours = new Cours
                 (
-                    
+
                     this.TB_NumeroCours.Text,
                     this.TB_CodeCours.Text,
                     this.TB_TitreCours.Text
                 );
 
             listCrs.Add(cours);
-            CoursSerialisation.Save(listCrs);
+            CoursSerialisation.Save_2(listCrs);
             this.TB_NumeroCours.Text = "";
             this.TB_CodeCours.Text = "";
             this.TB_TitreCours.Text = "";
@@ -103,7 +103,7 @@ namespace Projet_Final
         //Ajoute une note
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             Note note = new Note
                 (
 
@@ -113,7 +113,7 @@ namespace Projet_Final
                 );
 
             listNote.Add(note);
-            NoteSerialisation.Save(listNote);
+            NoteSerialisation.Save_2(listNote);
             this.TB_Note_NumeroEtudiant.Text = "";
             this.TB_Note_NumeroCours.Text = "";
             this.TB_Note.Text = "";
@@ -133,6 +133,18 @@ namespace Projet_Final
             }
 
             this.TB_Information.Text = ch;
+        }
+
+        private void MainWindow_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BT_Supprime_Click(object sender, EventArgs e)
+        {
+            EtudiantSerialisation.Save(etudiants);
+            CoursSerialisation.Save(listCrs);
+            NoteSerialisation.Save(listNote);
         }
     }//Fin classe
 

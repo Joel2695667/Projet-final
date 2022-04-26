@@ -57,6 +57,7 @@
             this.BT_Cours = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.BT_AfficheNote = new System.Windows.Forms.Button();
+            this.BT_Supprime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -339,9 +340,23 @@
             this.BT_AfficheNote.UseVisualStyleBackColor = false;
             this.BT_AfficheNote.Click += new System.EventHandler(this.BT_AfficheNote_Click);
             // 
+            // BT_Supprime
+            // 
+            this.BT_Supprime.BackColor = System.Drawing.Color.Crimson;
+            this.BT_Supprime.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_Supprime.ForeColor = System.Drawing.Color.Black;
+            this.BT_Supprime.Location = new System.Drawing.Point(104, 550);
+            this.BT_Supprime.Name = "BT_Supprime";
+            this.BT_Supprime.Size = new System.Drawing.Size(371, 43);
+            this.BT_Supprime.TabIndex = 30;
+            this.BT_Supprime.Text = "Supprimer tous les fichiers";
+            this.BT_Supprime.UseVisualStyleBackColor = false;
+            this.BT_Supprime.Click += new System.EventHandler(this.BT_Supprime_Click);
+            // 
             // MainWindow
             // 
             this.ClientSize = new System.Drawing.Size(1069, 615);
+            this.Controls.Add(this.BT_Supprime);
             this.Controls.Add(this.BT_AfficheNote);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.BT_Cours);
@@ -372,6 +387,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Name = "MainWindow";
+            this.Load += new System.EventHandler(this.MainWindow_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,6 +423,7 @@
         private System.Windows.Forms.Button BT_Cours;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BT_AfficheNote;
+        private System.Windows.Forms.Button BT_Supprime;
     }
 }
 
