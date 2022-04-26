@@ -24,8 +24,8 @@ namespace Projet_Final
             //Fermeture du fichier
             fs.Close();
 
-        }        
-    
+        }
+
 
         public static List<Etudiant> Open()
         {
@@ -68,6 +68,31 @@ namespace Projet_Final
             return Etudiants;
         }
 
+
+
+        public static void Save_2(List<Etudiant> etudiant)
+        {
+            List<Etudiant> lisTemp = new List<Etudiant>();
+
+            if (File.Exists(filePath))
+            {
+                lisTemp = Open();
+                foreach (Etudiant item in etudiant) lisTemp.Add(item);
+                Save(lisTemp);
+            }
+            else
+            {
+                //Création et ouverture du fichier
+                FileStream fs = File.Create(filePath);
+                //Permet de sérialiser un objet
+                BinaryFormatter bf = new BinaryFormatter();
+                //Sérialisation de l'objet clientList dans le fichier créé
+                bf.Serialize(fs, etudiant);
+                //Fermeture du fichier
+                fs.Close();
+            }
+
+        }
 
     }
 

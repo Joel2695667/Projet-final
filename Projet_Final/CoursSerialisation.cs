@@ -66,6 +66,31 @@ namespace Projet_Final
         }
 
 
+
+        public static void Save_2(List<Cours> crs)
+        {
+            List<Cours> lisTemp = new List<Cours>();
+
+            if (File.Exists(filePath))
+            {
+                lisTemp = Open();
+                foreach (Cours item in crs) lisTemp.Add(item);
+                Save(lisTemp);
+            }
+            else
+            {
+                //Création et ouverture du fichier
+                FileStream fs = File.Create(filePath);
+                //Permet de sérialiser un objet
+                BinaryFormatter bf = new BinaryFormatter();
+                //Sérialisation de l'objet clientList dans le fichier créé
+                bf.Serialize(fs, crs);
+                //Fermeture du fichier
+                fs.Close();
+            }
+
+        }
+
     }
 
 }
