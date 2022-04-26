@@ -56,6 +56,7 @@
             this.TB_AfficheEtudiant = new System.Windows.Forms.Button();
             this.BT_Cours = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.BT_AfficheNote = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -325,9 +326,23 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "Espace d\'Affichage";
             // 
+            // BT_AfficheNote
+            // 
+            this.BT_AfficheNote.BackColor = System.Drawing.Color.Cyan;
+            this.BT_AfficheNote.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_AfficheNote.ForeColor = System.Drawing.Color.Black;
+            this.BT_AfficheNote.Location = new System.Drawing.Point(427, 425);
+            this.BT_AfficheNote.Name = "BT_AfficheNote";
+            this.BT_AfficheNote.Size = new System.Drawing.Size(187, 49);
+            this.BT_AfficheNote.TabIndex = 28;
+            this.BT_AfficheNote.Text = "Affiche Note";
+            this.BT_AfficheNote.UseVisualStyleBackColor = false;
+            this.BT_AfficheNote.Click += new System.EventHandler(this.BT_AfficheNote_Click);
+            // 
             // MainWindow
             // 
             this.ClientSize = new System.Drawing.Size(1069, 615);
+            this.Controls.Add(this.BT_AfficheNote);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.BT_Cours);
             this.Controls.Add(this.TB_AfficheEtudiant);
@@ -391,6 +406,7 @@
         private System.Windows.Forms.Button TB_AfficheEtudiant;
         private System.Windows.Forms.Button BT_Cours;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button BT_AfficheNote;
     }
 }
 

@@ -119,6 +119,21 @@ namespace Projet_Final
             this.TB_Note.Text = "";
         }
 
+        //Affiche la liste de note
+        private void BT_AfficheNote_Click(object sender, EventArgs e)
+        {
+            this.TB_Information.Text = "";
+
+            string ch = "";
+            List<Note> listNote = NoteSerialisation.Open();
+
+            foreach (Note x in listNote)
+            {
+                ch += x.ToString();
+            }
+
+            this.TB_Information.Text = ch;
+        }
     }//Fin classe
 
 }//fin Namespace
