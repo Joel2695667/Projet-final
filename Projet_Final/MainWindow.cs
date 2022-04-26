@@ -149,10 +149,15 @@ namespace Projet_Final
 
             string ch = "";
             List<Note> listNote = NoteSerialisation.Open();
+            List<Etudiant> listTempEtuidiant = EtudiantSerialisation.Open();
 
             foreach (Note x in listNote)
             {
-                ch += x.ToString();
+                foreach(Etudiant etudiant in listTempEtuidiant)
+                    if(x.NumeroEtudiantNote.Equals(etudiant.NumeroEtudiant))
+                    {
+                        ch += "Etudiant : " + etudiant.Nom + ", " + etudiant.Prenom + " " +  x.ToString() + "\n";
+                    }                
             }
 
             this.TB_Information.Text = "Liste des notes";

@@ -52,7 +52,7 @@ namespace Projet_Final
 
         public override string ToString()
         {
-            return "Titre : " + this.TitreCours + ", Code : " + this.CodeCours + ", Numero" + this.NumeroCours;
+            return "Titre : " + this.TitreCours + ", Code : " + this.CodeCours + ", Numero : " + this.NumeroCours;
         }
 
     }
