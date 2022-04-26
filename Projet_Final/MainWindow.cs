@@ -168,6 +168,7 @@ namespace Projet_Final
             EtudiantSerialisation.Save(etudiants);
             CoursSerialisation.Save(listCrs);
             NoteSerialisation.Save(listNote);
+            this.LB_affiche.Text = "";
         }
     }//Fin classe
 
